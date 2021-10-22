@@ -10,25 +10,11 @@ namespace TrainingMenu.MenuItems
         public override void Execute()
         {
             string firstStr = IOUtils.SafeReadString("Please, enter the first string: ");
-            try
-            {
-                WhatThisStringIs(firstStr);
-            }
-            catch(ValidationException validEx)
-            {
-                Console.WriteLine("[Validation Exception] " + validEx.Message);
-            }
+            WhatThisStringIs(firstStr);
             
             string secondStr = IOUtils.SafeReadString("Please, enter the second string: ");
-            try
-            {
-                WhatThisStringIs(secondStr);
-            }
-            catch (ValidationException validEx)
-            {
-                Console.WriteLine("[Validation Exception] " + validEx.Message);
-            }
-            
+            WhatThisStringIs(secondStr);
+         
             CompareStrings(firstStr, secondStr);
         }
 
@@ -56,7 +42,7 @@ namespace TrainingMenu.MenuItems
             }
             else
             {
-                throw new ValidationException("This string is neither email nor phone number, nor IP-address");
+                Console.WriteLine("This string is neither email nor phone number, nor IP-address");
             }
         }
 

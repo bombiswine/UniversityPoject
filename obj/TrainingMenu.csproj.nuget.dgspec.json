@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\programming\\programs_c_sharp\\university_programs\\TrainingMenu\\TrainingMenu.csproj": {}
+    "D:\\programming\\programs_c_sharp\\university_programs\\UniversityProject\\TrainingMenu.csproj": {}
   },
   "projects": {
-    "D:\\programming\\programs_c_sharp\\university_programs\\TrainingMenu\\TrainingMenu.csproj": {
+    "D:\\programming\\programs_c_sharp\\university_programs\\UniversityProject\\TrainingMenu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\programming\\programs_c_sharp\\university_programs\\TrainingMenu\\TrainingMenu.csproj",
+        "projectUniqueName": "D:\\programming\\programs_c_sharp\\university_programs\\UniversityProject\\TrainingMenu.csproj",
         "projectName": "TrainingMenu",
-        "projectPath": "D:\\programming\\programs_c_sharp\\university_programs\\TrainingMenu\\TrainingMenu.csproj",
+        "projectPath": "D:\\programming\\programs_c_sharp\\university_programs\\UniversityProject\\TrainingMenu.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\programming\\programs_c_sharp\\university_programs\\TrainingMenu\\obj\\",
+        "outputPath": "D:\\programming\\programs_c_sharp\\university_programs\\UniversityProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
