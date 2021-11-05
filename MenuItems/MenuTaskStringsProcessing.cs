@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 
 namespace TrainingMenu.MenuItems
 {
-    class MenuTaskStringsProcessing : MenuTaskCore
+    public class MenuTaskStringsProcessing : MenuTaskCore
     {
         public override string Title { get { return "Strings Processing"; } }
 
@@ -50,7 +50,7 @@ namespace TrainingMenu.MenuItems
         {
             try
             {
-                AreEquals(firstStr, secondStr);
+                AreEqual(firstStr, secondStr);
             } 
             catch(ValidationException validEx)
             {
@@ -59,7 +59,7 @@ namespace TrainingMenu.MenuItems
 
             try
             {
-                AreEqualsAfterModifying(firstStr, secondStr);
+                AreEqualAfterModifying(firstStr, secondStr);
             }
             catch (ValidationException validEx)
             {
@@ -68,7 +68,7 @@ namespace TrainingMenu.MenuItems
 
             try
             {
-                AreEachOtherReflections(firstStr, secondStr);
+                AreFlipStrings(firstStr, secondStr);
             }
             catch (ValidationException validEx)
             {
@@ -76,7 +76,7 @@ namespace TrainingMenu.MenuItems
             }
         }
 
-        public static void AreEquals(string firstStr, string secondStr)
+        public static void AreEqual(string firstStr, string secondStr)
         {
             if (!string.Equals(firstStr, secondStr))
             {
@@ -86,7 +86,7 @@ namespace TrainingMenu.MenuItems
             Console.WriteLine("Input strings are equals");
         }
 
-        public static void AreEqualsAfterModifying(string firstStr, string secondStr)
+        public static void AreEqualAfterModifying(string firstStr, string secondStr)
         {
             Regex trimmer = new Regex(@"\s\s+");
             firstStr  = trimmer.Replace(firstStr, " ").Trim().ToLower();
@@ -100,7 +100,7 @@ namespace TrainingMenu.MenuItems
             Console.WriteLine("Input strings are equals after converting to one case and removing extra spaces");
         }
 
-        public static void AreEachOtherReflections(string firstStr, string secondStr)
+        public static void AreFlipStrings(string firstStr, string secondStr)
         {
             if (!string.Equals(firstStr, ReverseString(secondStr)))
             {

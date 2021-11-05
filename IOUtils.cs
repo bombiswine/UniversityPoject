@@ -31,6 +31,40 @@ namespace TrainingMenu
             }
         }
 
+        public static int SafeReadPositiveInteger(string message = null)
+        {
+            int iResult;
+            while (true)
+            {
+                iResult = SafeReadInteger(message);
+                if (iResult > 0)
+                {
+                    return iResult;
+                }
+                else
+                {
+                    Console.Write("Input error: input value must be positive\nRepeat the input");
+                }
+            }
+        }
+
+        public static int SafeReadNotNullInteger(string message)
+        {
+            int iResult;
+            while (true)
+            {
+                iResult = SafeReadInteger(message);
+                if (iResult != 0)
+                {
+                    return iResult;
+                }
+                else
+                {
+                    Console.WriteLine("Input error: Z must be not zero\nRepeat the input");
+                }
+            }
+        }
+
         public static DateTime SafeReadDate(string message = null)
         {
             if (!string.IsNullOrEmpty(message))

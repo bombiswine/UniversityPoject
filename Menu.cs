@@ -4,7 +4,7 @@ using TrainingMenu.MenuItems;
 
 namespace TrainingMenu
 {
-    class Menu
+    public class Menu
     {
         public enum MenuItemCodes
         {
@@ -15,7 +15,7 @@ namespace TrainingMenu
             StringsProcessing
         };
 
-        public static List<MenuTaskCore> MenuItemsList = new List<MenuTaskCore>();
+        private static List<MenuTaskCore> MenuItemsList = new List<MenuTaskCore>();
 
         private static void ClearItems()
         {

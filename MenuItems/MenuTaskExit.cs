@@ -2,7 +2,7 @@
 
 namespace TrainingMenu.MenuItems
 {
-    class MenuTaskExit : MenuTaskCore
+    public class MenuTaskExit : MenuTaskCore
     {
         public override string Title { get { return "Exit"; } }
 

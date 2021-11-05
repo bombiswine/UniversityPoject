@@ -2,7 +2,7 @@
 
 namespace TrainingMenu
 {
-    class ValidationException : Exception
+    public class ValidationException : Exception
     {
         public ValidationException() : base() 
         { }

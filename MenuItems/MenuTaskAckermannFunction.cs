@@ -3,7 +3,7 @@ using TrainingMenu.SpecialTypes;
 
 namespace TrainingMenu.MenuItems
 {
-    class MenuTaskAckermannFunction : MenuTaskCore
+    public class MenuTaskAckermannFunction : MenuTaskCore
     {
         public override string Title { get { return "Calculation of Ackermann's function"; } }
 
@@ -27,6 +27,7 @@ namespace TrainingMenu.MenuItems
                 Console.WriteLine($"The result is: {iCalculatioResult}");
             }
         }
+
         private int AckermannFunction(int iParamM, int iParamN = 5)
         {
             int iResult = 0;

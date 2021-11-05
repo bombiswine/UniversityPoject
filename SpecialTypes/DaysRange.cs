@@ -2,13 +2,26 @@
 
 namespace TrainingMenu.SpecialTypes
 {
-    class DaysRange
+    public class DaysRange
     {
         public DateTime Begining { get; set; }
         public DateTime Ending { get; set; }
 
         public DaysRange()
         { }
+
+        public DaysRange(DateTime beginingDate, DateTime endingDate)
+        {
+            if (beginingDate <= endingDate)
+            {
+                Begining = beginingDate;
+                Ending = endingDate;
+            }
+            else
+            {
+                throw new ValidationException("Invalid days range");
+            }
+        }
 
         public DaysRange(string message = null)
         {
@@ -23,10 +36,7 @@ namespace TrainingMenu.SpecialTypes
                 {
                     Console.WriteLine("Error: invalid day range\nRepeat the input");
                 }
-                else
-                {
-                    break;
-                }
+                else break;
             }
         }
 

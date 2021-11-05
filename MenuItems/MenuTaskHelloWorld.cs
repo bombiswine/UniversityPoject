@@ -2,7 +2,7 @@
 
 namespace TrainingMenu.MenuItems
 {
-    class MenuTaskHelloWorld : MenuTaskCore
+    public class MenuTaskHelloWorld : MenuTaskCore
     {
         public override string Title { get { return "Hello World"; } }
 
